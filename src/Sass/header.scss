@@ -1,16 +1,55 @@
-$textColor: #FF977D;
-
 header {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-    nav {
-      display: flex;
-      gap: 30px;
-      margin-right: 80px;
-        a{
-          color: $textColor;
-        }
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden; 
+
+  img {
+    position: absolute;
+    filter: brightness(50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 3%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1; 
+
+    a {
+      color: $textColor; 
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .intro {
+    margin: 400px;
+    text-align: center;
+    button {
+      font-family: inherit;
+      display: inline-block;
+      background-color: #FF977D;
+      color: white;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #e56e50;
       }
+    }
+  }
 }
+

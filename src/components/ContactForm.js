@@ -49,13 +49,18 @@ const ContactForm = () => {
     if (status) {
       const timer = setTimeout(() => {
         setStatus('');
-      }, 10000); // 10000ms = 10 seconds
+      }, 10000);
 
-      return () => clearTimeout(timer); // Cleanup function to clear timeout
+      return () => clearTimeout(timer);
     }
   }, [status]);
 
   return (
+    <>
+    <div className='contactText'>
+    <h2>Contactez-moi</h2>
+    <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou en cliquant sur mon adresse mail</p>
+    </div>
     <form id='contactForm' className='contactForm' onSubmit={handleSubmit}>
       <div className='formGroup'>
         <label>
@@ -93,7 +98,19 @@ const ContactForm = () => {
       <br />
       <button type="submit">Envoyer</button>
       {status && <p>{status}</p>}
+      <div className='contactDetails'>
+        <div className='contactItem'>
+          <i class="fa-solid fa-at"></i><a href='mailto:tons.gr@gmail.com'>tons.gr@gmail.com</a>
+        </div>
+        <div className='contactItem'>
+          <i class="fa-solid fa-mobile-screen"></i><p>06 36 20 38 56</p>
+        </div>
+        <div className='contactItem'>
+          <i class="fa-solid fa-house-chimney"></i><p>03100 Montluçon</p>
+        </div>
+      </div>
     </form>
+    </>
   );
 };
 

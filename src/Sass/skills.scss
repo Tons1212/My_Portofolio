@@ -1,0 +1,13 @@
+.skills {
+    background-color: $backgroundColor2;
+    text-align: center;
+    padding: 25px;
+    .logos {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        img {
+            width: 90px;
+        }
+    }
+}

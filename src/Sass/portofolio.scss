@@ -1,0 +1,58 @@
+.portofolio {
+      display: "flex",
+      justifyContent: "space-around",
+      alignItems: "center",
+      flexWrap: "wrap",
+      margin: "20px 0",
+    },
+    .cards {
+      width: "300px",
+      padding: "20px",
+      border: "1px solid #ddd",
+      borderRadius: "8px",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+      textAlign: "center",
+      margin: "10px",
+    },
+    .button {
+      display: "inline-block",
+      marginTop: "10px",
+      padding: "10px 15px",
+      backgroundColor: "#007bff",
+      color: "white",
+      textDecoration: "none",
+      borderRadius: "5px",
+    },
+
+.portofolio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    .cards {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 10px;
+        button {
+            font-family: inherit;
+            display: inline-block;
+            background-color: #FF977D;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        
+            &:hover {
+              background-color: #e56e50;
+            }
+          }
+    }
+}
