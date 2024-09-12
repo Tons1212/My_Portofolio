@@ -1,14 +1,15 @@
-$primary-color: #3498db;
+@import './Sass/variables.scss';
+@import './Sass/header.scss';
+@import './Sass/contactForm.scss';
+@import './Sass/about.scss';
+
+
 
 body {
-  background-color: red;
-  font-family: Arial, sans-serif;
+  background-color: #181111;
+  color: $textColor;
+  font-family: "Baumans", system-ui; 
 }
 
-.container {
-  padding: 20px;
-  h1 {
-    color: white;
-    text-align: center;
-  }
-}
+
+
