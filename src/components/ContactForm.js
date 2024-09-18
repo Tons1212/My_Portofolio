@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     nom: '',
     prenom: '',
@@ -58,45 +61,45 @@ const ContactForm = () => {
   return (
     <>
     <div className='contactText'>
-    <h2>Contactez-moi</h2>
-    <p>N'hésitez pas à me contacter via le formulaire ci-dessous ou en cliquant sur mon adresse mail</p>
+    <h2>{t("contact.title")}</h2>
+    <p>{t("contact.text")}</p>
     </div>
     <form id='contactForm' className='contactForm' onSubmit={handleSubmit}>
       <div className='formGroup'>
         <label>
-          Nom :
+        {t("contact.name")}
           <input type="text" name="nom" value={formData.nom} onChange={handleChange} required />
         </label>
         <br />
         <label>
-          Prénom :
+        {t("contact.firstName")}
           <input type="text" name="prenom" value={formData.prenom} onChange={handleChange} required />
         </label>
         <br />
       </div>
       <div className='formGroup'>
         <label>
-          Téléphone :
+        {t("contact.phone")}
           <input type="tel" name="telephone" value={formData.telephone} onChange={handleChange} required />
         </label>
         <br />
         <label>
-          Email :
+        {t("contact.mail")}
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
         </label>
         <br />
       </div>
       <label>
-        Objet :
+      {t("contact.object")}
         <input type="text" name="objet" value={formData.objet} onChange={handleChange} required />
       </label>
       <br />
       <label>
-        Message :
+      {t("contact.message")}
         <textarea name="message" value={formData.message} onChange={handleChange} required />
       </label>
       <br />
-      <button type="submit">Envoyer</button>
+      <button type="submit">{t("contact.submit")}</button>
       {status && <p>{status}</p>}
       <div className='contactDetails'>
         <div className='contactItem'>

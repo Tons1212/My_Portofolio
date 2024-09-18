@@ -3,18 +3,59 @@
       "home": "Home",
       "about": "About",
       "skills": "Skills",
-      "portofolio": "Portofolio",
+      "portofolio": "Portfolio",
       "contact": "Contact",
-      "intro": "Hello ! Je suis Antoine GROSJAT",
+      "intro": "Hello !",
+      "intro1": "I am Antoine GROSJAT",
       "jobTitle": "Junior web integrator",
       "learnMore": "Learn more"
     },
-    "footer": {
-      "contact": "Contact Us",
-      "terms": "Terms of Service"
+    "about": {
+    "title": "About me",
+    "text": "Hi there ! My name is Antoine GROSJAT and i'm a Junior Web Integrator passionate about creating interactive and aesthetic websites. With a solid training followed at Openclassrooms in 2023/2024 in HTML, CSS and JavaScript, I am dedicated to transforming visual concepts into engaging and functional user experiences.",
+    "text1": "I am passionate about web development and always looking for new opportunities to learn and grow. My goal is to continue to improve my skills, explore new technologies, and contribute to challenging projects that push the boundaries of web design."
+  },
+    "skills": {
+      "title": "Skills",
+      "front": "Front-end",
+      "back": "Back-end"
     },
-    "home": {
-      "welcome_message": "Welcome to our homepage!",
-      "description": "This is a multilingual React application."
+    "portofolio": {
+      "title": "Portfolio",
+      "viewMore": "View More",
+    "projects": [
+      {
+        "title": "Kasa",
+        "description": "Creation of a real estate rental web application with React.",
+        "link": "#",
+        "image": "../kasa.png"
+      },
+      {
+        "title": "Nina Carducci",
+        "description": "SEO optimization of a photographer's website.",
+        "link": "#",
+        "image": "../nina.webp"
+      },
+      {
+        "title": "Argent Bank",
+        "description": "Development of the front-end of a banking application with React.",
+        "link": "#",
+        "image": "../bank-tree.png"
+      }
+    ]
+  },
+    "contact": {
+      "title": "Contact me",
+      "text": "Do not hesitate to contact me via the form below or by clicking on my email address.",
+      "name": "Last Name :",
+      "firstName": "First Name :",
+      "phone": "Phone number :",
+      "mail": "Email :",
+      "object": "Object :",
+      "message": "Message :",
+      "submit": "Send"
+    },
+    "footer": {
+      "rights": "All rights reserved."
     }
   }

@@ -1,0 +1,58 @@
+{
+    "header": {
+      "home": "Accueil",
+      "about": "À propos",
+      "skills": "Compétences",
+      "portofolio": "Portofolio",
+      "contact": "Contact",
+      "intro": "Hello !",
+      "intro1": "Je suis Antoine GROSJAT",
+      "jobTitle": "Intégrateur web junior",
+      "learnMore": "En savoir plus"
+    },
+    "about": {
+    "title": "À propos de moi",
+    "text": "Bonjour ! Je m'appelle Antoine GROSJAT et je suis un intégrateur web junior passionné par la création de sites web interactifs et esthétiques. Avec une solide formation suivie chez Openclassrooms en 2023/2024 en HTML, CSS et JavaScript, je suis dédié à transformer des concepts visuels en expériences utilisateur engageantes et fonctionnelles.",
+    "text1": "Je suis passionné par le développement web et toujours à la recherche de nouvelles opportunités pour apprendre et évoluer. Mon objectif est de continuer à améliorer mes compétences, d'explorer de nouvelles technologies, et de contribuer à des projets stimulants qui repoussent les limites du design web."
+  },
+    "skills": {
+      "title": "Compétences",
+      "front": "Front-end",
+      "back": "Back end"
+    },
+    "portofolio": {
+      "title": "Portofolio",
+      "viewMore": "Voir plus",
+      "projects" : [
+        {
+          "title": "Kasa",
+          "description": "Création d'une application web de location immoblière avec React.",
+          "image": "../kasa.png"
+        },
+        {
+          "title": "Nina Carducci",
+          "description": "Optimisation du référencement SEO d'un site de photographe.",
+          "image": "../nina.webp"
+        },
+        {
+          "title": "Argent Bank",
+          "description": "Réalisation du front-end d'une application bancaire avec React.",
+          "image": "../bank-tree.png"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "text": "N'hésitez pas à me contacter via le formulaire ci-dessous ou en cliquant sur mon adresse mail.",
+      "name": "Nom :",
+      "firstName": "Prénom :",
+      "phone": "Téléphone :",
+      "mail": "Email :",
+      "object": "objet :",
+      "message": "Message :",
+      "submit": "Envoyer"
+    },
+    "footer": {
+      "rights": "Tous droits réservés."
+    }
+  }

@@ -1,7 +1,16 @@
-import React, { useEffect } from 'react'
-import backgroundImg from '../assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.webp'
+import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import backgroundImg from '../assets/mohammad-rahmani-8qEB0fTe9Vw-unsplash.webp';
+import france from '../assets/france.png';
+import england from '../assets/royaume-uni.png';
 
 function Header() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
+
   useEffect(() => {
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
@@ -38,19 +47,29 @@ function Header() {
         <div></div>
         <div></div>
       </div>
-        <nav className='navLinks' id='navLinks'>
-            <a href='#home'>Accueil</a>
-            <a href='#about'>À propos</a>
-            <a href='#skills'>Compétences</a>
-            <a href='#portofolio'>Portofolio</a>
-            <a href='#contactForm'>Contact</a>
-        </nav>
+      <nav className='navLinks' id='navLinks'>
+      <div className="navLinksContainer">
+        <a href='#home'>{t('header.home')}</a>
+        <a href='#about'>{t('header.about')}</a>
+        <a href='#skills'>{t('header.skills')}</a>
+        <a href='#portofolio'>{t('header.portofolio')}</a>
+        <a href='#contactForm'>{t('header.contact')}</a>
+      </div>
+      <div className='language-switcher'>
+        <button onClick={() => changeLanguage('fr')}>
+          <img src={france} alt='Français' />
+        </button>
+        <button onClick={() => changeLanguage('en')}>
+          <img src={england} alt='English' />
+        </button>
+      </div>
+      </nav>
       <div className='intro'>
         <h1 className='animate__animated animate__backInDown'>
-          Hello ! <span className='wave'>👋</span><br />
-          Je suis Antoine GROSJAT</h1>
-        <p className='animate__animated animate__backInDown'>Intégrateur web junior</p>
-        <a href='#about' className='button animate__animated animate__backInDown'>En savoir plus</a>
+        {t('header.intro')}<span className='wave'>👋</span><br />
+        {t('header.intro1')}</h1>
+        <p className='animate__animated animate__backInDown'>{t('header.jobTitle')}</p>
+        <a href='#about' className='button animate__animated animate__backInDown'>{t('header.learnMore')}</a>
       </div>
       <div className='social animate__animated animate__backInDown'>
         <a href='https://github.com/Tons1212'><i class="fa-brands fa-github"></i></a>

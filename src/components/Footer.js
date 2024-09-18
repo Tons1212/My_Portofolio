@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className='footer'>
-      <p><i class="fa-regular fa-copyright"></i>   Copyright 2024 - Antoine GROSJAT. Tous droits réservés.</p>
+      <p><i class="fa-regular fa-copyright"></i>   Copyright 2024 - Antoine GROSJAT. {t("footer.rights")}</p>
     <div className='social'>
     <a href='https://github.com/Tons1212'><i class="fa-brands fa-github"></i></a>
     <a href='mailto:tons.gr@gmail.com'><i class="fa-solid fa-at"></i></a>

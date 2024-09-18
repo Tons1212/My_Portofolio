@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import projects from '../datas/projectData.json';
+import { useTranslation } from 'react-i18next';
 
 function Portfolio() {
+    const { t } = useTranslation();
+
     const [activeCard, setActiveCard] = useState(null);
     const cardRefs = useRef([]); // Ref pour stocker toutes les cartes
 
@@ -29,11 +31,14 @@ function Portfolio() {
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [activeCard]);
+
+    const projects = t('portofolio.projects', { returnObjects: true });
 
     return (
         <div id='portofolio' className='portofolio'>
-            <h2>Portofolio</h2>
+            <h2>{t('portofolio.title')}</h2>
             <div className='cardContainer'>
                 {projects.map((project, index) => (
                     <div
@@ -47,11 +52,11 @@ function Portfolio() {
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
                             <button className='button' onClick={(e) => { e.stopPropagation(); handleCardClick(index); }}>
-                                Voir plus
+                                {t("portofolio.viewMore")}
                             </button>
                         </div>
                         <div className="card-back">
-                            <p>Informations supplémentaires</p>
+                            <p>{t("portofolio.additionalInfo")}</p>
                         </div>
                     </div>
                 ))}
