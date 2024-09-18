@@ -1,18 +1,65 @@
-import React from 'react'
-import projects from '../datas/projectData.json'
+import React, { useState, useEffect, useRef } from 'react';
+import projects from '../datas/projectData.json';
 
-function Portofolio() {
-    return (
-        <div className='portofolio'>
-          {projects.map((project, index) => (
-            <div key={index} className='cards'>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} className='button'>Voir plus</a>
-            </div>
-          ))}
-        </div>
-      );
+function Portfolio() {
+    const [activeCard, setActiveCard] = useState(null);
+    const cardRefs = useRef([]); // Ref pour stocker toutes les cartes
+
+    const handleCardClick = (index) => {
+        setActiveCard(prevIndex => (prevIndex === index ? null : index));
     };
 
-export default Portofolio
+    const handleClickOutside = (event) => {
+        // Si une carte est active et que le clic est en dehors de celle-ci
+        if (activeCard !== null && cardRefs.current[activeCard] && !cardRefs.current[activeCard].contains(event.target)) {
+            setActiveCard(null); // Réinitialise l'état de la carte active
+        }
+    };
+
+    useEffect(() => {
+        if (activeCard !== null) {
+            // Ajouter l'écouteur d'événement global quand une carte est active
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            // Supprimer l'écouteur d'événement quand aucune carte n'est active
+            document.removeEventListener('click', handleClickOutside);
+        }
+
+        // Nettoyage de l'écouteur d'événement à la désactivation du composant
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [activeCard]);
+
+    return (
+        <div id='portofolio' className='portofolio'>
+            <h2>Portofolio</h2>
+            <div className='cardContainer'>
+                {projects.map((project, index) => (
+                    <div
+                        key={index}
+                        className={`cards ${activeCard === index ? 'active' : ''}`}
+                        onClick={() => handleCardClick(index)}
+                        ref={(el) => (cardRefs.current[index] = el)} // Associer chaque carte à son ref
+                    >
+                        <div className="card-content">
+                            <img src={project.image} alt={project.title} className='project-image' />
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                            <button className='button' onClick={(e) => { e.stopPropagation(); handleCardClick(index); }}>
+                                Voir plus
+                            </button>
+                        </div>
+                        <div className="card-back">
+                            <p>Informations supplémentaires</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default Portfolio;
+
+

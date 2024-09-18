@@ -2,17 +2,20 @@
     {
       "title": "Kasa",
       "description": "Création d'une application web de location immoblière avec React.",
-      "link": "#"
+      "link": "#",
+      "image": "../kasa.png"
     },
     {
       "title": "Nina Carducci",
       "description": "Optimisation du référencement SEO d'un site de photographe.",
-      "link": "#"
+      "link": "#",
+      "image": "../nina.webp"
     },
     {
       "title": "Argent Bank",
       "description": "Réalisation du front-end d'une application bancaire avec React.",
-      "link": "#"
+      "link": "#",
+      "image": "../bank-tree.png"
     }
   ]
   

@@ -1,0 +1,20 @@
+{
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "portofolio": "Portofolio",
+      "contact": "Contact",
+      "intro": "Hello ! Je suis Antoine GROSJAT",
+      "jobTitle": "Junior web integrator",
+      "learnMore": "Learn more"
+    },
+    "footer": {
+      "contact": "Contact Us",
+      "terms": "Terms of Service"
+    },
+    "home": {
+      "welcome_message": "Welcome to our homepage!",
+      "description": "This is a multilingual React application."
+    }
+  }

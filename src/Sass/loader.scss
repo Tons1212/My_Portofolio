@@ -1,0 +1,38 @@
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Fond noir */
+    color: $textColor;
+    font-family: Arial, sans-serif;
+    animation: fadeout 0.5s ease-in-out 2s forwards;
+  }
+  
+  .loading-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: $borderColor;
+    width: 0%; /* La largeur commence à 0% */
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .progress-percentage {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
