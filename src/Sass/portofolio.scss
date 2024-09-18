@@ -22,6 +22,18 @@
             // Initialement, ne pas montrer le dos de la carte
             .card-back {
                 display: none;
+                .technologies {
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: 10px;
+                }
+                
+                .technology-icon {
+                    width: 50px;
+                    height: 50px;
+                }
+                
             }
 
             // Rotation accrue pour la carte active

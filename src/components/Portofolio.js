@@ -56,7 +56,13 @@ function Portfolio() {
                             </button>
                         </div>
                         <div className="card-back">
-                            <p>{t("portofolio.additionalInfo")}</p>
+                            <p>{project.additionalInfo}</p>
+                            <p>{project.objectives}</p>
+                            <div className='technologies'>
+                                {project.technologies.map((tech, techIndex) => (
+                                    <img key={techIndex} src={tech} alt={`Technology ${techIndex}`} className='technology-icon' />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}

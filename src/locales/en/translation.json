@@ -23,27 +23,48 @@
     "portofolio": {
       "title": "Portfolio",
       "viewMore": "View More",
-    "projects": [
-      {
-        "title": "Kasa",
-        "description": "Creation of a real estate rental web application with React.",
-        "link": "#",
-        "image": "../kasa.png"
-      },
-      {
-        "title": "Nina Carducci",
-        "description": "SEO optimization of a photographer's website.",
-        "link": "#",
-        "image": "../nina.webp"
-      },
-      {
-        "title": "Argent Bank",
-        "description": "Development of the front-end of a banking application with React.",
-        "link": "#",
-        "image": "../bank-tree.png"
-      }
-    ]
-  },
+      "projects": [
+        {
+          "title": "Kasa",
+          "description": "Creation of a real estate rental web application with React.",
+          "link": "#",
+          "image": "../kasa.png",
+          "additionalInfo": "Kasa est le premier projet React que j'ai réalisé dans le cadre de ma formation d'intégrateur web.",
+          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "technologies": [
+              "../logo192.png",
+              "../sass.png",
+              "../github.jpg"
+            ]
+        },
+        {
+          "title": "Nina Carducci",
+          "description": "SEO optimization of a photographer's website.",
+          "link": "#",
+          "image": "../nina.webp",
+          "additionalInfo": "Kasa est le premier projet React que j'ai réalisé dans le cadre de ma formation d'intégrateur web.",
+          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "technologies": [
+              "../logo192.png",
+              "../sass.png",
+              "../github.jpg"
+            ]
+        },
+        {
+          "title": "Argent Bank",
+          "description": "Development of the front-end of a banking application with React.",
+          "link": "#",
+          "image": "../bank-tree.png",
+          "additionalInfo": "Kasa est le premier projet React que j'ai réalisé dans le cadre de ma formation d'intégrateur web.",
+          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "technologies": [
+              "../logo192.png",
+              "../sass.png",
+              "../github.jpg"
+            ]
+        }
+      ]
+    },
     "contact": {
       "title": "Contact me",
       "text": "Do not hesitate to contact me via the form below or by clicking on my email address.",
