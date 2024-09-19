@@ -8,9 +8,9 @@
         flex-wrap: wrap;
 
         .cards {
-            width: 300px;
+            width: 350px;
             padding: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid $borderColor;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(70, 96, 243, 0.4);
             text-align: center;
@@ -18,64 +18,80 @@
             position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             overflow: hidden;
-
-            // Initialement, ne pas montrer le dos de la carte
+            .technologies {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                width: 100%; 
+                p {
+                    margin-bottom: 15px;
+                    text-decoration: underline;
+                }
+            
+                .technology-icon {
+                    display: flex;
+                    flex-wrap: wrap; 
+                    gap: 10px; 
+                    justify-content: center; 
+                    width: 100%; 
+                }
+                .technology-icon img {
+                    width: 45px;  
+                    object-fit: cover; 
+                }
+            }
             .card-back {
                 display: none;
-                .technologies {
-                    display: flex;
-                    justify-content: center;
-                    gap: 10px;
-                    margin-top: 10px;
+                z-index: 2;
+                margin: -10px;
+                    .githubLink {
+                        margin-top: 10px;
+                        p {
+                            margin-bottom: 5px;
+                        }
+            
+                        .github-link {
+                            color: $textColor;
+                            text-decoration: none; 
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                 }
                 
-                .technology-icon {
-                    width: 50px;
-                    height: 50px;
-                }
-                
-            }
+            
 
-            // Rotation accrue pour la carte active
             &.active {
-                transform: rotateY(180deg); /* Rotation seulement sur l'axe Y */
-                box-shadow: 0 12px 24px rgba(89, 92, 247, 0.5);
+                transform: rotateY(180deg); 
+                box-shadow: 0 12px 24px rgba(20, 41, 228, 0.9);
                 transition: transform 0.5s ease, box-shadow 0.5s ease;
-
-                // Quand la carte est active, afficher le dos et masquer le contenu
                 .card-back {
                     transform: rotateY(180deg);
                     display: block;
-                    height: 300px;
                 }
 
                 .card-content {
                     display: none;
                 }
-
-                // Désactiver les effets de hover quand la carte est active
                 &:hover {
-                    transform: rotateY(180deg); /* Conserver la rotation */
-                    box-shadow: 0 12px 24px rgba(89, 92, 247, 0.5);
+                    transform: rotateY(180deg); 
+                    box-shadow: 0 12px 24px rgba(20, 41, 228, 0.9);
                 }
 
                 &:hover:before {
-                    opacity: 0; /* Désactiver l'overlay sombre */
+                    opacity: 0; 
                 }
 
                 .button {
-                    opacity: 0; /* Cacher le bouton sur la face arrière */
+                    opacity: 0; 
                     visibility: hidden;
                 }
             }
-
-            // Survol léger si non active
             &:not(.active):hover {
                 transform: rotateX(10deg) rotateY(5deg);
-                box-shadow: 0 12px 24px rgba(89, 92, 247, 0.5);
+                box-shadow: 0 12px 24px rgba(20, 41, 228, 0.9);
             }
-
-            // Effet d'assombrissement au survol
             &:before {
                 content: '';
                 position: absolute;

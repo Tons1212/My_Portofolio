@@ -42,7 +42,7 @@
       border: none;
       border-radius: 5px;
       font-size: 1rem;
-      background-color: rgb(182, 214, 255) ;
+      background-color: rgb(210, 228, 252) ;
       color: #333;
       box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1); 
       transition: border 0.3s ease;  
@@ -97,6 +97,7 @@
         }
       }
       @media (max-width: 768px) {
+        margin: 20px;
         .contactDetails {
           justify-content: center;
           gap: 8px;

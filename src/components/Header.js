@@ -47,7 +47,7 @@ function Header() {
         <div></div>
         <div></div>
       </div>
-      <nav className='navLinks' id='navLinks'>
+      <nav className='navLinks animate__animated animate__lightSpeedInLeft' id='navLinks'>
       <div className="navLinksContainer">
         <a href='#home'>{t('header.home')}</a>
         <a href='#about'>{t('header.about')}</a>
@@ -65,13 +65,13 @@ function Header() {
       </div>
       </nav>
       <div className='intro'>
-        <h1 className='animate__animated animate__backInDown'>
+        <h1 className='animate__animated animate__lightSpeedInRight'>
         {t('header.intro')}<span className='wave'>👋</span><br />
         {t('header.intro1')}</h1>
-        <p className='animate__animated animate__backInDown'>{t('header.jobTitle')}</p>
-        <a href='#about' className='button animate__animated animate__backInDown'>{t('header.learnMore')}</a>
+        <p className='animate__animated animate__lightSpeedInRight'>{t('header.jobTitle')}</p>
+        <a href='#about' className='button animate__animated animate__lightSpeedInRight'>{t('header.learnMore')}</a>
       </div>
-      <div className='social animate__animated animate__backInDown'>
+      <div className='social animate__animated animate__lightSpeedInRight'>
         <a href='https://github.com/Tons1212'><i class="fa-brands fa-github"></i></a>
         <a href='mailto:tons.gr@gmail.com'><i class="fa-solid fa-at"></i></a>
         <a href='https://www.linkedin.com/in/antoine-grosjat-4a0860329/'><i class="fa-brands fa-linkedin"></i></a>

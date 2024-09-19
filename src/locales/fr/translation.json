@@ -23,40 +23,48 @@
     "portofolio": {
       "title": "Portofolio",
       "viewMore": "Voir plus",
+      "tech": "Technologies utilisées :",
+      "gitlink": "Lien Github :",
+      "code": "Voir le code du projet",
       "projects" : [
         {
           "title": "Kasa",
           "description": "Création d'une application web de location immoblière avec React.",
+          "link": "https://github.com/Tons1212/Kasa",
           "image": "../kasa.png",
           "additionalInfo": "Kasa est le premier projet React que j'ai réalisé dans le cadre de ma formation d'intégrateur web.",
-          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "objectives": "A partir d'une maquette fournie, j'ai réalisé la refonte totale de cette application de location immobilière. L'utilisation des bibliothèques React et React Router m'a permis de créer une interface utilisateur dynamique et interactive, et Sass de faciliter la gestion des styles. Les données sur les logements sont importées à partir d'un fichier Json fourni pour de meilleures performances et une facilité de mise à jour.",
           "technologies": [
-              "../logo192.png",
+              "../react.jpg",
+              "../react-router.png",
               "../sass.png",
               "../github.jpg"
             ]        
           },
         {
           "title": "Nina Carducci",
-          "description": "Optimisation du référencement SEO d'un site de photographe.",
+          "description": "Optimisation du référencement SEO du site d'une photographe professionnelle.",
+          "link": "https://github.com/Tons1212/Nina-Carducci",
           "image": "../nina.webp",
-          "additionalInfo": "Kasa est le premier projet React que j'ai réalisé dans le cadre de ma formation d'intégrateur web.",
+          "additionalInfo": "Projet réalisé dans le cadre de ma formation d'intégrateur web.",
           "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
           "technologies": [
-              "../logo192.png",
-              "../sass.png",
+              "../lighthouse.png",
+              "../wave.png",
               "../github.jpg"
             ]
         },
         {
           "title": "Argent Bank",
           "description": "Réalisation du front-end d'une application bancaire avec React.",
+          "link": "https://github.com/Tons1212/Argent-Bank",
           "image": "../bank-tree.png",
-          "additionalInfo": "Kasa est le premier projet React que j'ai réalisé dans le cadre de ma formation d'intégrateur web.",
-          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "additionalInfo": "Argent Bank est un projet réalisé dans le cadre de ma formation d'intégrateur web chez OpenClassrooms. ",
+          "objectives": "L'objectif était d'une part de mettre en place une interface utilisateur avec un système d'authentification sécurisé, et d'autre part, j'ai réalisé un document via Swagger, décrivant les routes API côté back-end, qui permettraient à l'utilisateur d'effectuer certaines transactions personnelles.",
           "technologies": [
-              "../logo192.png",
-              "../sass.png",
+              "../react.jpg",
+              "../redux.png",
+              "../react-router.png",
               "../github.jpg"
             ]
         }

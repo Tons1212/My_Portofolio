@@ -8,16 +8,16 @@ import Skills from './components/Skills';
 import Loader from './components/Loader';
 import './main.scss';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [contentVisible, setContentVisible] = useState(false);
 
   useEffect(() => {
-    // Simule un chargement de 3 secondes
     const timer = setTimeout(() => {
       setLoading(false);
       setContentVisible(true);
-    }, 2000); // Délai en ms
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);

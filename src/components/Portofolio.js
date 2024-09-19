@@ -5,29 +5,28 @@ function Portfolio() {
     const { t } = useTranslation();
 
     const [activeCard, setActiveCard] = useState(null);
-    const cardRefs = useRef([]); // Ref pour stocker toutes les cartes
+    const cardRefs = useRef([]); 
 
     const handleCardClick = (index) => {
         setActiveCard(prevIndex => (prevIndex === index ? null : index));
     };
 
     const handleClickOutside = (event) => {
-        // Si une carte est active et que le clic est en dehors de celle-ci
+        
         if (activeCard !== null && cardRefs.current[activeCard] && !cardRefs.current[activeCard].contains(event.target)) {
-            setActiveCard(null); // Réinitialise l'état de la carte active
+            setActiveCard(null); 
         }
     };
 
     useEffect(() => {
         if (activeCard !== null) {
-            // Ajouter l'écouteur d'événement global quand une carte est active
+            
             document.addEventListener('click', handleClickOutside);
         } else {
-            // Supprimer l'écouteur d'événement quand aucune carte n'est active
+            
             document.removeEventListener('click', handleClickOutside);
         }
 
-        // Nettoyage de l'écouteur d'événement à la désactivation du composant
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
@@ -45,7 +44,7 @@ function Portfolio() {
                         key={index}
                         className={`cards ${activeCard === index ? 'active' : ''}`}
                         onClick={() => handleCardClick(index)}
-                        ref={(el) => (cardRefs.current[index] = el)} // Associer chaque carte à son ref
+                        ref={(el) => (cardRefs.current[index] = el)}
                     >
                         <div className="card-content">
                             <img src={project.image} alt={project.title} className='project-image' />
@@ -54,15 +53,21 @@ function Portfolio() {
                             <button className='button' onClick={(e) => { e.stopPropagation(); handleCardClick(index); }}>
                                 {t("portofolio.viewMore")}
                             </button>
+                            <div className='technologies'>
+                            <p>{t("portofolio.tech")}</p>
+                                <div className='technology-icon'>{project.technologies.map((tech, techIndex) => (
+                                    <img key={techIndex} src={tech} alt={`Technology ${techIndex}`} className='technology-icon' />
+                                ))}
+                                </div>
+                            </div>
                         </div>
                         <div className="card-back">
                             <p>{project.additionalInfo}</p>
                             <p>{project.objectives}</p>
-                            <div className='technologies'>
-                                {project.technologies.map((tech, techIndex) => (
-                                    <img key={techIndex} src={tech} alt={`Technology ${techIndex}`} className='technology-icon' />
-                                ))}
-                            </div>
+                                <div className='githubLink'>
+                                    <p>{t("portofolio.gitlink")}</p>
+                                <a href='https://github.com/Tons1212/Kasa' className='github-link' target='_blank' rel="noopener noreferrer">{t("portofolio.code")}</a>
+                                </div>
                         </div>
                     </div>
                 ))}
@@ -72,5 +77,3 @@ function Portfolio() {
 }
 
 export default Portfolio;
-
-

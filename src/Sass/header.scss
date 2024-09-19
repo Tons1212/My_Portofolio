@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000; 
-    animation: slideInFromLeft 1.1s cubic-bezier(0.4, 0, 0.2, 1);
+    
     .navLinksContainer{
       display: flex;
       justify-content: center;
@@ -64,7 +64,7 @@ header {
       left: 100%; 
       height: 40vh;
       width: 40%; 
-      background-color: rgba(0, 0, 0, 0.8); 
+      background-color: $backgroundColor; 
       justify-content: center;
       flex-direction: column;
       transition: left 0.4s ease; 
@@ -90,6 +90,7 @@ header {
     @media (max-width: 768px) {
       display: block;
       position: fixed;
+      background-color: $backgroundColor;
       top: 20px;
       right: 20px;
       z-index: 1001;
@@ -153,6 +154,14 @@ header {
         border-color: $borderColor;
       }
     }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
   }
 
   .social {
@@ -181,6 +190,11 @@ header {
   
       &:nth-child(3) {
         animation-delay: 0.4s;
+      }
+    }
+    @media (max-width: 768px) {
+      a {
+        margin-top: 10px;
       }
     }
   }

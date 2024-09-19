@@ -1,20 +1,43 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import selfie from '../assets/bibi.jpg'
+import selfie from '../assets/bibi.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 function About() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      offset: 200, 
+    });
+  }, []);
+
   return (
-    <section id='about' className='about'>
+    <section id='about' className='about lines'>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
       <h2>{t('about.title')}</h2>
       <div className='presentation'>
-        <img src={selfie} alt='profile Antoine GROSJAT'/>
-        <p>{t('about.text')}<br />
-          <br />{t('about.text1')}</p>
+        <img
+          data-aos='zoom-in-down'
+          src={selfie}
+          alt='profile Antoine GROSJAT'
+        />
+        <p data-aos='zoom-in-down'>
+          {t('about.text')}
+          <br />
+          <br />
+          {t('about.text1')}
+        </p>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
+

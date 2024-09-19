@@ -61,5 +61,13 @@ $borderColor: #197CAE;
       transform: rotate(360deg) scale(18) translateX(20px);
     }
   }
+  @keyframes drop {
+  0% {
+    top: -50%
+  }
+  100% {
+    top: 110%
+  }
+  }
 
    
