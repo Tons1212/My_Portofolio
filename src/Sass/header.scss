@@ -158,16 +158,18 @@ header {
   .social {
     position: absolute;
     top: 68%;
-    left: 46%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 20px;
     animation-delay: 900ms;
+    margin-left: -55px;
     a {
       color: $textColor;
       font-size: 25px;
       transition: transform 0.3s ease;
       display: inline-block;
+      justify-content: center;
       animation: bounce 1.5s ease infinite;
       &:nth-child(1) {
         animation-delay: 0s;
