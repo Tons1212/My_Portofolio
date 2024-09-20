@@ -46,8 +46,8 @@
           "description": "Optimisation du référencement SEO du site d'une photographe professionnelle.",
           "link": "https://github.com/Tons1212/Nina-Carducci",
           "image": "../nina.webp",
-          "additionalInfo": "Projet réalisé dans le cadre de ma formation d'intégrateur web.",
-          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "additionalInfo": "Dans ce projet j'ai passé en revue le code du site afin de déceler, à l'aide d'outils web, ce qui pouvait impacter sa performance et apporter les corrections nécessaires.",
+          "objectives": "Grâce aux audits réalisés avec Wave pour l'accéssibilité et Lighthouse pour les performances générale du site, j'ai pu trouver et mettre à jour le code qui présentait de nombreuses lacunes dans ces domaines. La réduction du poid des images, la minification des fichiers styles ou encore la mise en place de balises de référencement permettent une nette amélioration des performances de l'application.",
           "technologies": [
               "../lighthouse.png",
               "../wave.png",

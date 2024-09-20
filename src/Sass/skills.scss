@@ -2,10 +2,16 @@
     background-color: $backgroundColor2;
     text-align: center;
     padding: 25px;
+    h2{
+        margin: 40px 0 40px;
+        @media (max-width: 768px){
+            margin: 15px 0 15px;
+        }
+    }
     .logos {
         display: flex;
         justify-content: space-around;
-        margin: 20px;
+        margin: 50px;
         flex-wrap: wrap;
         gap: 20px;
         img {

@@ -1,7 +1,12 @@
 .portofolio {
     text-align: center;
-    margin: 35px 0;
-
+    margin: 40px 0 40px;
+    h2 {
+        margin-bottom: 60px;
+        @media (max-width: 768px){
+            margin: 10px 0 30px;
+          }
+    }
     .cardContainer {
         display: flex;
         justify-content: space-around;

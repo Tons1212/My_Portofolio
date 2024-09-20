@@ -46,11 +46,11 @@
           "description": "SEO optimization of a photographer's website.",
           "link": "https://github.com/Tons1212/Nina-Carducci",
           "image": "../nina.webp",
-          "additionalInfo": "Projet réalisé dans le cadre de ma formation d'intégrateur web.",
-          "objectives": "À partir d'une maquette fournie j'ai réalisé la refonte totale de cette application de location immobilière.",
+          "additionalInfo": "In this project I reviewed the site's code in order to detect, using web tools, what could impact its performance and make the necessary corrections.",
+          "objectives": "With the audits carried out with Wave for accessibility and Lighthouse for general performances, I was able to find and update the code that had many issues in these areas. Reducing the weight of images, minifying style files or even implementing referencing tags allows a clear improvement in the performance of the application.",
           "technologies": [
-              "../logo192.png",
-              "../sass.png",
+              "../lighthouse.png",
+              "../wave.png",
               "../github.jpg"
             ]
         },

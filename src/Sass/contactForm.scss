@@ -2,6 +2,9 @@
     text-align: center;
     margin-bottom: 35px;
     margin-top: 80px;
+    @media (max-width: 768px) {
+      margin: 50px 0 30px;
+    }
 }
 .contactForm {
     max-width: 600px;
@@ -97,7 +100,7 @@
         }
       }
       @media (max-width: 768px) {
-        margin: 20px;
+        margin: 10px;
         .contactDetails {
           justify-content: center;
           gap: 8px;
