@@ -13,7 +13,10 @@ html {
 }
 
 body {
-  background-color: $backgroundColor;
+  margin: 0;
+  background: linear-gradient(45deg, #0f2027, #010353, #071635, #100153, #18094d);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
   color: $textColor;
   font-family: "Kosugi Maru", sans-serif;
   font-size: 20px; 
