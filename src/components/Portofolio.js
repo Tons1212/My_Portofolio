@@ -49,7 +49,7 @@ function Portfolio() {
                         <div className="card-content">
                             <img src={project.image} alt={project.title} className='project-image' />
                             <h3>{project.title}</h3>
-                            <p>{project.description}</p>
+                            <p className='desc'>{project.description}</p>
                             <button className='button' onClick={(e) => { e.stopPropagation(); handleCardClick(index); }}>
                                 {t("portfolio.viewMore")}
                             </button>

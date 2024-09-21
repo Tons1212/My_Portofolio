@@ -71,22 +71,22 @@ const ContactForm = () => {
           <input type="text" name="nom" value={formData.nom} onChange={handleChange} required />
         </label>
         <br />
-        <label>
-        {t("contact.firstName")}
+        <span><label>
+        {t("contact.mail")}
           <input type="text" name="prenom" value={formData.prenom} onChange={handleChange} required />
-        </label>
+        </label></span>
         <br />
       </div>
       <div className='formGroup'>
         <label>
-        {t("contact.phone")}
+        {t("contact.firstName")}
           <input type="tel" name="telephone" value={formData.telephone} onChange={handleChange} required />
         </label>
         <br />
-        <label>
-        {t("contact.mail")}
+        <span><label>
+        {t("contact.phone")}
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </label>
+        </label></span>
         <br />
       </div>
       <label>

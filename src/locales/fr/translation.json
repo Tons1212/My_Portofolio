@@ -18,7 +18,7 @@
     "skills": {
       "title": "Compétences",
       "front": "Front-end",
-      "back": "Back end"
+      "back": "Back-end"
     },
     "portfolio": {
       "title": "Portfolio",
@@ -77,7 +77,7 @@
       "firstName": "Prénom :",
       "phone": "Téléphone :",
       "mail": "Email :",
-      "object": "objet :",
+      "object": "Objet :",
       "message": "Message :",
       "submit": "Envoyer"
     },
