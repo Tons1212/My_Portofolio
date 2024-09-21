@@ -1,4 +1,4 @@
-.portofolio {
+.portfolio {
     text-align: center;
     margin: 40px 0 40px;
     h2 {
@@ -47,6 +47,7 @@
             }
             .card-back {
                 display: none;
+                position: relative;
                 z-index: 2;
                 margin: -10px;
                     .githubLink {
@@ -56,6 +57,7 @@
                         }
             
                         .github-link {
+                            position: relative;
                             color: $textColor;
                             text-decoration: none; 
                             &:hover {

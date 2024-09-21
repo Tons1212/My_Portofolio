@@ -33,11 +33,11 @@ function Portfolio() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [activeCard]);
 
-    const projects = t('portofolio.projects', { returnObjects: true });
+    const projects = t('portfolio.projects', { returnObjects: true });
 
     return (
-        <div id='portofolio' className='portofolio'>
-            <h2>{t('portofolio.title')}</h2>
+        <div id='portfolio' className='portfolio'>
+            <h2>{t('portfolio.title')}</h2>
             <div className='cardContainer'>
                 {projects.map((project, index) => (
                     <div
@@ -51,10 +51,10 @@ function Portfolio() {
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
                             <button className='button' onClick={(e) => { e.stopPropagation(); handleCardClick(index); }}>
-                                {t("portofolio.viewMore")}
+                                {t("portfolio.viewMore")}
                             </button>
                             <div className='technologies'>
-                            <p>{t("portofolio.tech")}</p>
+                            <p>{t("portfolio.tech")}</p>
                                 <div className='technology-icon'>{project.technologies.map((tech, techIndex) => (
                                     <img key={techIndex} src={tech} alt={`Technology ${techIndex}`} className='technology-icon' />
                                 ))}
@@ -65,8 +65,8 @@ function Portfolio() {
                             <p>{project.additionalInfo}</p>
                             <p>{project.objectives}</p>
                                 <div className='githubLink'>
-                                    <p>{t("portofolio.gitlink")}</p>
-                                <a href='https://github.com/Tons1212/Kasa' className='github-link' target='_blank' rel="noopener noreferrer">{t("portofolio.code")}</a>
+                                    <p>{t("portfolio.gitlink")}</p>
+                                <a href= {project.link} className='github-link' target='_blank' rel="noopener noreferrer">{t("portfolio.code")}</a>
                                 </div>
                         </div>
                     </div>

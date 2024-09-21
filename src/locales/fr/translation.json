@@ -3,7 +3,7 @@
       "home": "Accueil",
       "about": "À propos",
       "skills": "Compétences",
-      "portofolio": "Portofolio",
+      "portfolio": "Portfolio",
       "contact": "Contact",
       "intro": "Hello !",
       "intro1": "Je suis Antoine GROSJAT",
@@ -20,8 +20,8 @@
       "front": "Front-end",
       "back": "Back end"
     },
-    "portofolio": {
-      "title": "Portofolio",
+    "portfolio": {
+      "title": "Portfolio",
       "viewMore": "Voir plus",
       "tech": "Technologies utilisées :",
       "gitlink": "Lien Github :",

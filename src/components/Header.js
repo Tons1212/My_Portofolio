@@ -52,7 +52,7 @@ function Header() {
         <a href='#home'>{t('header.home')}</a>
         <a href='#about'>{t('header.about')}</a>
         <a href='#skills'>{t('header.skills')}</a>
-        <a href='#portofolio'>{t('header.portofolio')}</a>
+        <a href='#portfolio'>{t('header.portfolio')}</a>
         <a href='#contactForm'>{t('header.contact')}</a>
       </div>
       <div className='language-switcher'>
