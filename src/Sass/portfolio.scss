@@ -1,6 +1,9 @@
 .portfolio {
     text-align: center;
     margin: 40px 0 40px;
+    @media (max-width: 768px){
+        margin: 10px 0 40px;
+      }
     h2 {
         margin-bottom: 60px;
         @media (max-width: 768px){

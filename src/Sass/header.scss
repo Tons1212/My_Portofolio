@@ -177,9 +177,6 @@ header {
     gap: 20px;
     animation-delay: 900ms;
     margin-left: -55px;
-    @media (max-width: 768px) {
-      top: 65%;
-    }
     a {
       color: $textColor;
       font-size: 25px;
