@@ -66,37 +66,37 @@ const ContactForm = () => {
     </div>
     <form id='contactForm' className='contactForm' onSubmit={handleSubmit}>
       <div className='formGroup'>
-        <label>
+        <label htmlFor='nom'>
         {t("contact.name")}
-          <input type="text" name="nom" value={formData.nom} onChange={handleChange} required />
+          <input type="text" name="nom" id='nom' value={formData.nom} onChange={handleChange} required />
         </label>
         <br />
-        <span><label>
+        <span><label htmlFor='email'>
         {t("contact.mail")}
-          <input type="text" name="prenom" value={formData.prenom} onChange={handleChange} required />
+          <input type="email" name="email" id='email' value={formData.email} onChange={handleChange} required />
         </label></span>
         <br />
       </div>
       <div className='formGroup'>
-        <label>
+        <label htmlFor='prenom'>
         {t("contact.firstName")}
-          <input type="tel" name="telephone" value={formData.telephone} onChange={handleChange} required />
+          <input type="text" name="prenom" id='prenom' value={formData.prenom} onChange={handleChange} required />
         </label>
         <br />
-        <span><label>
+        <span><label htmlFor='telephone'>
         {t("contact.phone")}
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+          <input type="tel" name="telephone" id='telephone' value={formData.telephone} onChange={handleChange} required />
         </label></span>
         <br />
       </div>
-      <label>
+      <label htmlFor='objet'>
       {t("contact.object")}
-        <input type="text" name="objet" value={formData.objet} onChange={handleChange} required />
+        <input type="text" name="objet" id='objet' value={formData.objet} onChange={handleChange} required />
       </label>
       <br />
-      <label>
+      <label htmlFor='message'>
       {t("contact.message")}
-        <textarea name="message" value={formData.message} onChange={handleChange} required />
+        <textarea name="message" id='message' value={formData.message} onChange={handleChange} required />
       </label>
       <br />
       <button type="submit">{t("contact.submit")}</button>
