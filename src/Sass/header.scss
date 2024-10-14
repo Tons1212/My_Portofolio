@@ -84,7 +84,7 @@ header {
       }
 
       &.open {
-        left: 48%;
+        left: 55%;
       }
     }
   }
@@ -96,7 +96,7 @@ header {
       position: fixed;
       background-color: $backgroundColor;
       top: 20px;
-      right: 50px;
+      right: 20px;
       z-index: 1001;
       cursor: pointer;
       div {

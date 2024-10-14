@@ -1,17 +1,19 @@
 .footer {
     text-align: center;
     width: 100%;
-    padding: 15px;
     margin-top: 50px;
+    padding: 15px 0 15px;
     font-family: "Marcellus", serif;
     background-color: $backgroundColor2;
-    .social a {
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    a {
       color: $textColor;
       font-size: 25px;
-      margin: 8px;
-      display: inline-block;
       transition: transform 0.3s ease;
-      animation: bounce 1.5s infinite;
+      animation: bounce 1.5s infinite; 
       &:nth-child(1) {
         animation-delay: 0s;
       }
@@ -24,4 +26,8 @@
         animation-delay: 0.4s;
       }
     }
+  }
+  p {
+    margin: 20px;
+  }
 }
