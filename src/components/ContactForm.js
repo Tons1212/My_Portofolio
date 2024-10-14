@@ -64,6 +64,14 @@ const ContactForm = () => {
     <h2>{t("contact.title")}</h2>
     <p>{t("contact.text")}</p>
     </div>
+    <div className='contactDetails'>
+        <div className='contactItem'>
+          <i class="fa-solid fa-at"></i><a href='mailto:tons.gr@gmail.com'>tons.gr@gmail.com</a>
+        </div>
+        <div className='contactItem'>
+          <i class="fa-solid fa-mobile-screen"></i><p>06 36 20 38 56</p>
+        </div>
+      </div>
     <form id='contactForm' className='contactForm' onSubmit={handleSubmit}>
       <div className='formGroup'>
         <label htmlFor='nom'>
@@ -101,17 +109,6 @@ const ContactForm = () => {
       <br />
       <button type="submit">{t("contact.submit")}</button>
       {status && <p>{status}</p>}
-      <div className='contactDetails'>
-        <div className='contactItem'>
-          <i class="fa-solid fa-at"></i><a href='mailto:tons.gr@gmail.com'>tons.gr@gmail.com</a>
-        </div>
-        <div className='contactItem'>
-          <i class="fa-solid fa-mobile-screen"></i><p>06 36 20 38 56</p>
-        </div>
-        <div className='contactItem'>
-          <i class="fa-solid fa-house-chimney"></i><p>03100 Montluçon</p>
-        </div>
-      </div>
     </form>
     </>
   );

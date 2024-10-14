@@ -7,13 +7,13 @@
       "contact": "Contact",
       "intro": "Hello !",
       "intro1": "I am Antoine GROSJAT",
-      "jobTitle": "Junior web integrator",
+      "jobTitle": "Web integrator",
       "learnMore": "Learn more"
     },
     "about": {
     "title": "About me",
-    "text": "Hi there ! My name is Antoine GROSJAT and i'm a Junior Web Integrator passionate about creating interactive and aesthetic websites. With a solid training followed at Openclassrooms in 2023/2024 in HTML, CSS and JavaScript, I am dedicated to transforming visual concepts into engaging and functional user experiences.",
-    "text1": "I am passionate about web development and always looking for new opportunities to learn and grow. My goal is to continue to improve my skills, explore new technologies, and contribute to challenging projects that push the boundaries of web design."
+    "text": "Passionate about creating interactive and aesthetic websites, I followed training as a web integrator at Openclassrooms in 2023/2024, focusing on HTML, CSS and JavaScript. My ambition is to transform visual concepts into user experiences that are both engaging and functional.",
+    "text1": "Always looking for new opportunities to learn and progress, I invest myself in web development with the constant objective of improving my skills, exploring new technologies and participating in innovative projects that push the digital design boundaries."
   },
     "skills": {
       "title": "Skills",
@@ -33,7 +33,7 @@
           "link": "https://github.com/Tons1212/Kasa",
           "image": "../kasa.png",
           "additionalInfo": "Kasa is the first React project that I carried out as part of my web integrator training.",
-          "objectives": "From a model provided, I completely redesigned this real estate rental application. Using React and React Router libraries allowed me to create a dynamic and interactive user interface, and Sass made it easier to manage styles. Housing datas are imported from a Json file provided for better performance and ease of updating.",
+          "objectives": "From the specifications provided, I created this real estate rental application. Using the React and React Router libraries allowed me to create a dynamic and interactive user interface, and Sass made it easier to manage styles. Housing data is imported from a provided Json file for better performance and ease of updating.",
           "technologies": [
               "../react.jpg",
               "../react-router.png",
@@ -46,8 +46,8 @@
           "description": "SEO optimization of a photographer's website.",
           "link": "https://github.com/Tons1212/Nina-Carducci",
           "image": "../nina.webp",
-          "additionalInfo": "In this project I reviewed the site's code in order to detect, using web tools, what could impact its performance and make the necessary corrections.",
-          "objectives": "With the audits carried out with Wave for accessibility and Lighthouse for general performances, I was able to find and update the code that had many issues in these areas. Reducing the weight of images, minifying style files or even implementing referencing tags allows a clear improvement in the performance of the application.",
+          "additionalInfo": "Improved site performance, accessibility and best practices for better SEO.",
+          "objectives": "The audits carried out allowed me to identify and optimize the application code. By reducing the weight of images, minifying CSS files and integrating SEO tags, I was able to significantly improve the site's performance. Finally, I produced a report for the client, explaining the modifications made and their impacts on the application.",
           "technologies": [
               "../lighthouse.png",
               "../wave.png",
@@ -56,11 +56,11 @@
         },
         {
           "title": "Argent Bank",
-          "description": "Development of the front-end of a banking application with React.",
+          "description": "Creating a secure user interface for a banking application with React and Redux.",
           "link": "https://github.com/Tons1212/Argent-Bank",
           "image": "../bank-tree.png",
           "additionalInfo": "Argent Bank is a project carried out as part of my web integrator training at OpenClassrooms.",
-          "objectives": "The objective was firstly to set up a user interface with a secure authentication system, and secondly, I produced a document via Swagger, describing the API routes on the back-end side, which would allow the user to carry out certain personal transactions.",
+          "objectives": "Implementation of a user interface with a secure authentication system, and creation of a document via Swagger, describing the API routes on the back-end side, which would allow the user to carry out certain personal transactions.",
           "technologies": [
               "../react.jpg",
               "../redux.png",
@@ -72,7 +72,7 @@
     },
     "contact": {
       "title": "Contact me",
-      "text": "Do not hesitate to contact me via the form below or by clicking on my email address.",
+      "text": "Do not hesitate to contact me via mail or phone below, or by completing the contact form.",
       "name": "Last Name :",
       "firstName": "First Name :",
       "phone": "Phone number :",
