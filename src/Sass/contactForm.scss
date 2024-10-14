@@ -37,6 +37,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .formBlock {
+    padding: 10px;
+  }
+}
+
 .contactForm {
     max-width: 600px;
     margin: 0 auto; 
@@ -53,10 +59,10 @@
           width: 50%;
         }
         label {
-            flex: 1; 
-            display: flex;
-            flex-direction: column; 
-            input {
+          flex: 1; 
+          display: flex;
+          flex-direction: column; 
+          input {
               margin-top: 5px;
               width: 100%;
               min-width: 100px; 
@@ -109,6 +115,9 @@
       &:hover {
         background-color: $backgroundColor2;
         border-color: $borderColor;
+      }
+      @media (max-width: 768px) {
+        animation: pulseBorder 2s infinite;
       }
     }
 }

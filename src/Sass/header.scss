@@ -16,7 +16,7 @@ header {
   }
 
   .navLinks {
-    background-color: $backgroundColor; 
+    background-color: $backgroundColor2; 
     height: 40px;
     width: 100%;
     position: fixed; 
@@ -84,7 +84,7 @@ header {
       }
 
       &.open {
-        left: 55%;
+        left: 48%;
       }
     }
   }
@@ -96,7 +96,7 @@ header {
       position: fixed;
       background-color: $backgroundColor;
       top: 20px;
-      right: 20px;
+      right: 50px;
       z-index: 1001;
       cursor: pointer;
       div {
@@ -159,6 +159,9 @@ header {
       }
     }
     @media (max-width: 768px) {
+      .button {
+        animation: pulseBorder 2s infinite;
+      }
       h1 {
         font-size: 35px;
       }

@@ -1,7 +1,10 @@
 .footer {
     text-align: center;
-    margin: 30px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
     font-family: "Marcellus", serif;
+    background-color: $backgroundColor2;
     .social a {
       color: $textColor;
       font-size: 25px;

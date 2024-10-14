@@ -60,6 +60,7 @@ const ContactForm = () => {
 
   return (
     <>
+    <div className='formBlock'>
     <div className='contactText'>
     <h2>{t("contact.title")}</h2>
     <p>{t("contact.text")}</p>
@@ -110,6 +111,7 @@ const ContactForm = () => {
       <button type="submit">{t("contact.submit")}</button>
       {status && <p>{status}</p>}
     </form>
+    </div>
     </>
   );
 };

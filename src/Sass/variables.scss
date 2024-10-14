@@ -82,4 +82,15 @@ $borderColor: #197CAE;
     }
   }
 
+  @keyframes pulseBorder {
+    0%, 100% {
+      border-width: 2px;
+      border-color: $backgroundColor; /* Couleur de départ */
+    }
+    50% {
+      border-width: 2px; /* Épaisseur augmentée au milieu du cycle */
+      border-color: lighten($borderColor, 20%); /* Couleur plus claire au milieu */
+    }
+  }
+
    
